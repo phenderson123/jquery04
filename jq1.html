@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<title>code</title>
+
+<style>
+  p {
+    background: lime;
+    padding: 20px;
+  }
+</style>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+  
+  
+  $( "#hideContent" ).click(function() {
+  
+    
+    $( "p" ).fadeOut();
+    
+  });
+
+  
+  $( "#showContent" ).click(function() {
+  
+    
+    $( "p" ).fadeIn();
+    
+  });
+
+});
+</script>
+<button id="hideContent">Not gonna see me...</button>
+<button id="showContent">Well....maybe lol</button>
+<p>See me now!</p>
